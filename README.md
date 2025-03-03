@@ -1,1 +1,1 @@
-# Web-Development-Projects
+# Learning Web Development. Frontend Part
