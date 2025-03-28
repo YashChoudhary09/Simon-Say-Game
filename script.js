@@ -21,14 +21,15 @@ function levelUp(){
     userSq=[];
     level++;
     h3.innerText=`level ${level}`;
-  let randomNum = Math.floor(Math.random()*4); 
-  let randomBtn=randomColor[randomNum]; 
+  let randomindex = Math.floor(Math.random()*4); 
+  let randomBtn=randomColor[randomindex]; 
+  let flashBtn = document.querySelector(`#${randomBtn}`);
   console.log(randomBtn);
   console.log(randomNum);
-  console.log(flashbtn);
+ 
   gameSq.push(randomBtn);
   console.log(gameSq);
-    btnFlash(flashbtn);
+    btnFlash(flashBtn);
    highestScore(level);
 }
 
